@@ -42,6 +42,7 @@ public class dataController {
     }
 
 	// Getting the employees
+	
 	@Autowired
 	dataRepo repo;
 	
