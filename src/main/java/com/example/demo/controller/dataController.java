@@ -23,7 +23,7 @@ public class dataController {
 	@Autowired
 	projService pS;
 	
-	@PostMapping(path="/addProj")
+	@PostMapping("/addProj")
 	public ResponseEntity<Boolean> addProj(@RequestBody projPayload projPayload)
     {
         Boolean Ok = pS.addProjData(projPayload);
@@ -34,7 +34,7 @@ public class dataController {
 	@Autowired
 	private dataService dS;
 	
-	@PostMapping(path="/AddEmp")
+	@PostMapping("/AddEmp")
     public ResponseEntity<Boolean> addEmployee(@RequestBody dataPayload payload)
     {
         Boolean Ok = dS.addEmpData(payload);
