@@ -19,7 +19,6 @@ public class dataController {
 	
 	
 	// Inserting the project names.
-	
 	@Autowired
 	projService pS;
 	
@@ -42,7 +41,6 @@ public class dataController {
     }
 
 	// Getting the employees
-	
 	@Autowired
 	dataRepo repo;
 	
