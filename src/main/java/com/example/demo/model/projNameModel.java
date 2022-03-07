@@ -12,7 +12,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="proj_name_model")
+@Table(name="projname")
 @SequenceGenerator(name="seqs",initialValue=1,allocationSize = 1)
 public class projNameModel {
 	

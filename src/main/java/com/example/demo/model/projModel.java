@@ -8,7 +8,7 @@ import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="proj_model")
+@Table(name="emproj")
 @SequenceGenerator(name="seq",initialValue=1,allocationSize = 1)
 public class projModel {
 	

@@ -1,4 +1,3 @@
-
 package com.example.demo.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import com.example.demo.model.dataModel;
 import com.example.demo.model.dataPayload;
 import com.example.demo.model.projModel;
 import com.example.demo.model.projNameModel;
-
 
 @Service
 public class dataService {
@@ -28,10 +26,9 @@ public class dataService {
 		
 			long count = repo.countByName(dP.getName());
 			
-			
 			if(count > 0) {
+					
 				dataModel name = repo.findByName(dP.getName());
-				
 				projModel pdb = new projModel();
 				pdb.setId(dP.getId());
 				pdb.setEmp_idfk(name.getId());
@@ -39,8 +36,9 @@ public class dataService {
 				projNameModel pId = pRepo.findByProj(projN);
 				pdb.setProj_idfk(pId.getId());
 				peRepo.save(pdb);
-			
+
 			}else {
+				
 				dataModel db = new dataModel();
 				db.setId(dP.getId());
 				db.setName(dP.getName());
